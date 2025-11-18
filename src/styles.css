@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+
+h5{
+  color: blueviolet;
+  font-weight: bold;
+}
+.pepito{
+  display: block;
+  border: 4px solid #a200ff;   /* violeta */
+  border-radius: 12px;         /* bordes redondeados */
+  padding: 16px;
+  margin: 20px 0;
+  background-color: #faf5ff;   /* violeta MUY suave */
+}
