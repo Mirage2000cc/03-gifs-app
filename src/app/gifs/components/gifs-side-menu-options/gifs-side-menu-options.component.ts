@@ -1,12 +1,43 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from "@angular/router";
+
+
+interface MenuOption {
+
+  icon: string;
+  label: string;
+  route: string;
+  sublabel:string;
+}
 
 @Component({
   selector: 'gifs-side-menu-options',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './gifs-side-menu-options.component.html',
   styleUrl: './gifs-side-menu-options.component.css'
 })
+
+
+
 export  default class GifsSideMenuOptionsComponent {
+
+  menuOptions: MenuOption[] = [
+    {
+      icon: 'fa-solid fa-chart-line',
+      label: 'Trending',
+      sublabel: ' Gifs Populares  ',
+      route: '/dashboard/trending',
+    },
+    {
+      icon: 'fa-solid fa-magnifying-glass',
+      label: 'Buscador',
+      sublabel: ' Buscar Gifs  ',
+      route: '/dashboard/search',
+    },
+  ];
+
+
+
 
 }
