@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import GifListItemComponent from "./gif-list-item/gif-list-item.component";
 
 @Component({
@@ -9,5 +9,7 @@ import GifListItemComponent from "./gif-list-item/gif-list-item.component";
   styleUrl: './gif-list.component.css'
 })
 export default  class GifListComponent {
+
+  @Input() imagenes: string[] = [];
 
 }

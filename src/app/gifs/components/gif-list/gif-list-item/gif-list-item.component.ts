@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'gif-list-item',
@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './gif-list-item.component.css'
 })
 export default class GifListItemComponent {
+
+
+
+  @Input() url!: string;
+
+
 
 }

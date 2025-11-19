@@ -1,10 +1,8 @@
 <div class="pepito">
   <h5>gif-list.component</h5>
 
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    <gif-list-item></gif-list-item>
-    <gif-list-item></gif-list-item><gif-list-item></gif-list-item><gif-list-item></gif-list-item><gif-list-item></gif-list-item><gif-list-item></gif-list-item>
-</div>
-
-
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+  @for (img of imagenes; track $index) {
+    <gif-list-item [url]="img"></gif-list-item>
+  }
 </div>
